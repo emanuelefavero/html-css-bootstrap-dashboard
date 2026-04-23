@@ -1,0 +1,11 @@
+# MacOS
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Node modules
+node_modules/
+
+# Playwright mcp
+.playwright-mcp/
