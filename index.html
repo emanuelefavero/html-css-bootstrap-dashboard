@@ -42,7 +42,7 @@
       <nav class="navbar navbar-expand-lg bg-body py-2" data-bs-theme="dark">
         <div class="container-fluid">
           <!-- Logo -->
-          <a class="navbar-brand focus-ring focus-ring-light rounded-3" href="#"
+          <a class="navbar-brand rounded-3 focus-visible-ring" href="#"
             ><img src="assets/img/duck.png" alt="Logo" width="60" height="60"
           /></a>
 
@@ -63,25 +63,34 @@
             <!-- Navbar links -->
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-capitalize">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a
+                  class="nav-link active rounded-3 focus-visible-ring"
+                  aria-current="page"
+                  href="#"
                   >Catalogo Libri</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Anagrafica Utenti</a>
+                <a class="nav-link rounded-3 focus-visible-ring" href="#"
+                  >Anagrafica Utenti</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Storico Prestiti</a>
+                <a class="nav-link rounded-3 focus-visible-ring" href="#"
+                  >Storico Prestiti</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Help</a>
+                <a class="nav-link rounded-3 focus-visible-ring" href="#"
+                  >Help</a
+                >
               </li>
             </ul>
 
             <!-- Search form -->
             <form class="d-flex" role="search">
               <input
-                class="form-control me-2"
+                class="form-control me-2 focus-visible-ring"
                 type="search"
                 placeholder="Cerca..."
                 aria-label="Cerca"
@@ -415,7 +424,9 @@
                       value=""
                       id="firstCheckbox"
                     />
-                    <label class="form-check-label fs-7" for="firstCheckbox"
+                    <label
+                      class="form-check-label fs-7 user-select-none"
+                      for="firstCheckbox"
                       >Chiamare segreteria</label
                     >
                   </li>
@@ -426,7 +437,9 @@
                       value=""
                       id="secondCheckbox"
                     />
-                    <label class="form-check-label fs-7" for="secondCheckbox"
+                    <label
+                      class="form-check-label fs-7 user-select-none"
+                      for="secondCheckbox"
                       >Mandare avvisi prestiti scaduti</label
                     >
                   </li>
@@ -437,7 +450,9 @@
                       value=""
                       id="thirdCheckbox"
                     />
-                    <label class="form-check-label fs-7" for="thirdCheckbox"
+                    <label
+                      class="form-check-label fs-7 user-select-none"
+                      for="thirdCheckbox"
                       >Ordinare nuovi libri</label
                     >
                   </li>
@@ -472,7 +487,8 @@
                       data-bs-parent="#accordionFlushExample"
                     >
                       <div class="accordion-body">
-                        Clicca sul pulsante "Aggiungi Libro" in alto a destra.
+                        Clicca sul pulsante <code>Aggiungi Libro</code> in alto
+                        a destra.
                       </div>
                     </div>
                   </div>
@@ -495,8 +511,8 @@
                       data-bs-parent="#accordionFlushExample"
                     >
                       <div class="accordion-body">
-                        Clicca sulla voce "Anagrafica Utenti" nel menu di
-                        navigazione in alto, nella barra di navigazione.
+                        Clicca sulla voce <code>Anagrafica Utenti</code> nel
+                        menu di navigazione in alto, nella barra di navigazione.
                       </div>
                     </div>
                   </div>
