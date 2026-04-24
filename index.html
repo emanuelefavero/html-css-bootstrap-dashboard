@@ -31,6 +31,53 @@
   </head>
 
   <body>
-    <!-- TODO: Add your dashboard content here -->
+    <!-- NAVBAR -->
+    <header class="border border-info">
+      <!-- Navbar goes here -->
+      <!-- Inside: Replace the .navbar-brand text with an img tag containing the assets/img/duck.png icon -->
+      <!-- Inside: don't forget the navbar-nav ul items with li nav-item classes, @see https://getbootstrap.com/docs/5.3/components/navbar/ -->
+      <div>
+        Navbar -
+        <img src="assets/img/duck.png" alt="Logo" width="48" height="48" />
+        - REMOVE THIS DIV!!!
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="container py-4 border border-danger">
+      <div class="row">
+        <!-- LEFT SIDE: Title/Button + Table -->
+        <section class="col-12 col-xl-9 border border-secondary">
+          <div class="d-flex justify-content-between align-items-center">
+            <h1 class="text-capitalize h4">Catalogo Libri</h1>
+            <button class="btn btn-primary">Aggiungi Libro</button>
+          </div>
+
+          <!-- Table -->
+          <!-- ? use .table-responsive so mobile does not break -->
+          <!-- table with badges and outline-secondary action buttons -->
+          <div class="border border-danger" style="min-height: 600px">
+            Table Placeholder - REMOVE THIS DIV!!!
+          </div>
+        </section>
+
+        <!-- RIGHT SIDE: todo + faq cards -->
+        <aside class="col-12 col-xl-3 border border-warning">
+          <div class="vstack gap-4">
+            <!-- Todo Card with .card-header children -->
+            <!-- Inside: list group with checks inside -->
+            <div class="border border-danger" style="min-height: 200px">
+              TODO List Placeholder - REMOVE THIS DIV!!!
+            </div>
+
+            <!-- F.A.Q. Card with .card-header children -->
+            <!-- Inside: list group with questions and answers -->
+            <div class="border border-danger" style="min-height: 200px">
+              FAQ Placeholder - REMOVE THIS DIV!!!
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
   </body>
 </html>
