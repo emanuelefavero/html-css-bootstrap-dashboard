@@ -21,6 +21,12 @@
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
 
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
     <!-- Bootstrap 5 JS Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
@@ -95,14 +101,302 @@
         <section class="col-12 col-xl-9 border border-secondary">
           <div class="d-flex justify-content-between align-items-center">
             <h1 class="text-capitalize h3">Catalogo Libri</h1>
-            <button class="btn btn-primary">Aggiungi Libro</button>
+            <button class="btn btn-primary text-capitalize">
+              Aggiungi Libro
+            </button>
           </div>
 
           <!-- Table -->
-          <!-- ? use .table-responsive so mobile does not break -->
-          <!-- table with badges and outline-secondary action buttons -->
-          <div class="border border-danger" style="min-height: 600px">
-            Table Placeholder - REMOVE THIS DIV!!!
+          <div class="table-responsive">
+            <table class="table table-striped table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">Titolo</th>
+                  <th scope="col">Stato</th>
+                  <th scope="col">Azioni</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>I Pilastri della Terra</td>
+                  <td>
+                    <span class="badge text-bg-success">Disponibile</span>
+                  </td>
+                  <td class="text-nowrap">
+                    <button
+                      class="btn btn-outline-secondary btn-sm"
+                      type="button"
+                      aria-label="Modifica"
+                    >
+                      <i class="bi bi-pencil-fill"></i>
+                    </button>
+
+                    <button
+                      class="btn btn-outline-secondary btn-sm"
+                      type="button"
+                      aria-label="Elimina"
+                    >
+                      <i class="bi bi-trash3-fill"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>I Promessi Sposi</td>
+                  <td>
+                    <span class="badge text-bg-success">Disponibile</span>
+                  </td>
+                  <td class="text-nowrap">
+                    <button
+                      class="btn btn-outline-secondary btn-sm"
+                      type="button"
+                      aria-label="Modifica"
+                    >
+                      <i class="bi bi-pencil-fill"></i>
+                    </button>
+
+                    <button
+                      class="btn btn-outline-secondary btn-sm"
+                      type="button"
+                      aria-label="Elimina"
+                    >
+                      <i class="bi bi-trash3-fill"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Il Signore degli Anelli</td>
+                  <td>
+                    <span class="badge text-bg-warning">In Prestito</span>
+                  </td>
+                  <td class="text-nowrap">
+                    <button
+                      class="btn btn-outline-secondary btn-sm"
+                      type="button"
+                      aria-label="Modifica"
+                    >
+                      <i class="bi bi-pencil-fill"></i>
+                    </button>
+
+                    <button
+                      class="btn btn-outline-secondary btn-sm"
+                      type="button"
+                      aria-label="Elimina"
+                    >
+                      <i class="bi bi-trash3-fill"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Harry Potter e la Pietra Filosofale</td>
+                  <td>
+                    <span class="badge text-bg-success">Disponibile</span>
+                  </td>
+                  <td class="text-nowrap">
+                    <button
+                      class="btn btn-outline-secondary btn-sm"
+                      type="button"
+                      aria-label="Modifica"
+                    >
+                      <i class="bi bi-pencil-fill"></i>
+                    </button>
+
+                    <button
+                      class="btn btn-outline-secondary btn-sm"
+                      type="button"
+                      aria-label="Elimina"
+                    >
+                      <i class="bi bi-trash3-fill"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Il Codice Da Vinci</td>
+                  <td>
+                    <span class="badge text-bg-danger">Non Disponibile</span>
+                  </td>
+                  <td class="text-nowrap">
+                    <button
+                      class="btn btn-outline-secondary btn-sm"
+                      type="button"
+                      aria-label="Modifica"
+                    >
+                      <i class="bi bi-pencil-fill"></i>
+                    </button>
+
+                    <button
+                      class="btn btn-outline-secondary btn-sm"
+                      type="button"
+                      aria-label="Elimina"
+                    >
+                      <i class="bi bi-trash3-fill"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Shining</td>
+                  <td>
+                    <span class="badge text-bg-success">Disponibile</span>
+                  </td>
+                  <td class="text-nowrap">
+                    <button
+                      class="btn btn-outline-secondary btn-sm"
+                      type="button"
+                      aria-label="Modifica"
+                    >
+                      <i class="bi bi-pencil-fill"></i>
+                    </button>
+
+                    <button
+                      class="btn btn-outline-secondary btn-sm"
+                      type="button"
+                      aria-label="Elimina"
+                    >
+                      <i class="bi bi-trash3-fill"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>La Divina Commedia</td>
+                  <td>
+                    <span class="badge text-bg-warning">In Prestito</span>
+                  </td>
+                  <td class="text-nowrap">
+                    <button
+                      class="btn btn-outline-secondary btn-sm"
+                      type="button"
+                      aria-label="Modifica"
+                    >
+                      <i class="bi bi-pencil-fill"></i>
+                    </button>
+
+                    <button
+                      class="btn btn-outline-secondary btn-sm"
+                      type="button"
+                      aria-label="Elimina"
+                    >
+                      <i class="bi bi-trash3-fill"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Il Trono di Spade</td>
+                  <td>
+                    <span class="badge text-bg-success">Disponibile</span>
+                  </td>
+                  <td class="text-nowrap">
+                    <button
+                      class="btn btn-outline-secondary btn-sm"
+                      type="button"
+                      aria-label="Modifica"
+                    >
+                      <i class="bi bi-pencil-fill"></i>
+                    </button>
+
+                    <button
+                      class="btn btn-outline-secondary btn-sm"
+                      type="button"
+                      aria-label="Elimina"
+                    >
+                      <i class="bi bi-trash3-fill"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Il Mondo di Sofia</td>
+                  <td>
+                    <span class="badge text-bg-danger">Non Disponibile</span>
+                  </td>
+                  <td class="text-nowrap">
+                    <button
+                      class="btn btn-outline-secondary btn-sm"
+                      type="button"
+                      aria-label="Modifica"
+                    >
+                      <i class="bi bi-pencil-fill"></i>
+                    </button>
+
+                    <button
+                      class="btn btn-outline-secondary btn-sm"
+                      type="button"
+                      aria-label="Elimina"
+                    >
+                      <i class="bi bi-trash3-fill"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Le Cronache di Narnia: Il Leone, la Strega e l'Armadio
+                  </td>
+                  <td>
+                    <span class="badge text-bg-warning">In Prestito</span>
+                  </td>
+                  <td class="text-nowrap">
+                    <button
+                      class="btn btn-outline-secondary btn-sm"
+                      type="button"
+                      aria-label="Modifica"
+                    >
+                      <i class="bi bi-pencil-fill"></i>
+                    </button>
+
+                    <button
+                      class="btn btn-outline-secondary btn-sm"
+                      type="button"
+                      aria-label="Elimina"
+                    >
+                      <i class="bi bi-trash3-fill"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Il Piccolo Principe</td>
+                  <td>
+                    <span class="badge text-bg-success">Disponibile</span>
+                  </td>
+                  <td class="text-nowrap">
+                    <button
+                      class="btn btn-outline-secondary btn-sm"
+                      type="button"
+                      aria-label="Modifica"
+                    >
+                      <i class="bi bi-pencil-fill"></i>
+                    </button>
+
+                    <button
+                      class="btn btn-outline-secondary btn-sm"
+                      type="button"
+                      aria-label="Elimina"
+                    >
+                      <i class="bi bi-trash3-fill"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>La Storia Infinita</td>
+                  <td>
+                    <span class="badge text-bg-success">Disponibile</span>
+                  </td>
+                  <td class="text-nowrap">
+                    <button
+                      class="btn btn-outline-secondary btn-sm"
+                      type="button"
+                      aria-label="Modifica"
+                    >
+                      <i class="bi bi-pencil-fill"></i>
+                    </button>
+
+                    <button
+                      class="btn btn-outline-secondary btn-sm"
+                      type="button"
+                      aria-label="Elimina"
+                    >
+                      <i class="bi bi-trash3-fill"></i>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </section>
 
