@@ -7,10 +7,6 @@ body {
   font-size: 0.875rem;
 }
 
-.fs-8 {
-  font-size: 0.75rem;
-}
-
 .focus-visible-ring {
   &:focus {
     outline: none;
