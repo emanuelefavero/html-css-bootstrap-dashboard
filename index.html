@@ -31,16 +31,61 @@
   </head>
 
   <body>
-    <!-- NAVBAR -->
-    <header class="border border-info">
-      <!-- Navbar goes here -->
-      <!-- Inside: Replace the .navbar-brand text with an img tag containing the assets/img/duck.png icon -->
-      <!-- Inside: don't forget the navbar-nav ul items with li nav-item classes, @see https://getbootstrap.com/docs/5.3/components/navbar/ -->
-      <div>
-        Navbar -
-        <img src="assets/img/duck.png" alt="Logo" width="48" height="48" />
-        - REMOVE THIS DIV!!!
-      </div>
+    <!-- HEADER Navbar -->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body py-2" data-bs-theme="dark">
+        <div class="container-fluid">
+          <!-- Logo -->
+          <a class="navbar-brand focus-ring focus-ring-light rounded-3" href="#"
+            ><img src="assets/img/duck.png" alt="Logo" width="60" height="60"
+          /></a>
+
+          <!-- Navbar toggler -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Navbar links -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-capitalize">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Catalogo Libri</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Anagrafica Utenti</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Storico Prestiti</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Help</a>
+              </li>
+            </ul>
+
+            <!-- Search form -->
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Cerca..."
+                aria-label="Cerca"
+                data-bs-theme="light"
+              />
+              <button class="btn btn-outline-light" type="submit">Cerca</button>
+            </form>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <!-- MAIN CONTENT -->
@@ -49,7 +94,7 @@
         <!-- LEFT SIDE: Title/Button + Table -->
         <section class="col-12 col-xl-9 border border-secondary">
           <div class="d-flex justify-content-between align-items-center">
-            <h1 class="text-capitalize h4">Catalogo Libri</h1>
+            <h1 class="text-capitalize h3">Catalogo Libri</h1>
             <button class="btn btn-primary">Aggiungi Libro</button>
           </div>
 
