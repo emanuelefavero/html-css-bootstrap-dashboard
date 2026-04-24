@@ -12,9 +12,10 @@ body {
     outline: none;
     box-shadow: none;
   }
+
   &:focus-visible {
     outline: 0;
-    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 0 0.25rem rgb(255 255 255 / 0.25);
   }
 }
 
