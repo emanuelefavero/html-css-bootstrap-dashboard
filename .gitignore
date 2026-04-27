@@ -9,3 +9,6 @@ node_modules/
 
 # Playwright mcp
 .playwright-mcp/
+
+# Agents
+.agents/
