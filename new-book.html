@@ -101,7 +101,38 @@
         <h1 class="text-capitalize fs-3 m-0">Nuovo Libro</h1>
 
         <!-- TODO #form -->
-        <form></form>
+        <form class="row g-3">
+          <!-- Author Name -->
+          <div class="col-6">
+            <label for="authorName" class="form-label">Nome Autore</label>
+            <input
+              type="text"
+              class="form-control"
+              id="authorName"
+              placeholder="Inserisci il nome dell'autore"
+            />
+          </div>
+
+          <!-- Author Last Name -->
+          <div class="col-6">
+            <label for="authorLastName" class="form-label"
+              >Cognome Autore</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="authorLastName"
+              placeholder="Inserisci il cognome dell'autore"
+            />
+          </div>
+
+          <!-- Submit Button -->
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">
+              Aggiungi Libro
+            </button>
+          </div>
+        </form>
       </section>
     </main>
   </body>
