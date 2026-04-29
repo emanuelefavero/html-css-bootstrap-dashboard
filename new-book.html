@@ -111,6 +111,9 @@
               name="authorName"
               id="authorName"
               placeholder="Inserisci il nome dell'autore"
+              required
+              minlength="2"
+              maxlength="50"
             />
           </div>
 
@@ -125,6 +128,9 @@
               name="authorLastName"
               id="authorLastName"
               placeholder="Inserisci il cognome dell'autore"
+              required
+              minlength="2"
+              maxlength="50"
             />
           </div>
 
@@ -138,6 +144,9 @@
               id="bookTitle"
               placeholder="Inserisci il titolo del libro"
               aria-describedby="bookTitleHelpBlock"
+              required
+              minlength="2"
+              maxlength="120"
             />
             <!-- Form text -->
             <div class="form-text" id="bookTitleHelpBlock">
@@ -153,6 +162,7 @@
               aria-label="Seleziona il genere del libro"
               name="bookGenre"
               id="bookGenre"
+              required
             >
               <option value="" disabled selected>Scegli il genere</option>
               <option value="narrativa">Narrativa</option>
@@ -173,6 +183,9 @@
               id="publicationYear"
               name="publicationYear"
               placeholder="Inserisci l'anno"
+              required
+              min="1450"
+              max="2026"
             />
           </div>
 
@@ -185,6 +198,10 @@
               name="isbnCode"
               id="isbnCode"
               placeholder="Inserisci il codice ISBN#"
+              required
+              minlength="10"
+              maxlength="17"
+              pattern="(?:(?:\d[\s-]?){9}[\dXx]|(?:\d[\s-]?){12}\d)"
             />
           </div>
 
@@ -202,6 +219,7 @@
               id="bookNotes"
               rows="3"
               placeholder="Inserisci eventuali note sul libro"
+              maxlength="500"
             ></textarea>
           </div>
 
