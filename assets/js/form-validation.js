@@ -2,7 +2,7 @@
   'use strict'
 
   // Enables Bootstrap custom validation styles. Resets valid form on submit
-  // @see https://getbootstrap.com/docs/5.3/forms/validation/#custom-styles */
+  // @see https://getbootstrap.com/docs/5.3/forms/validation/#custom-styles
   const forms = document.querySelectorAll('.needs-validation')
 
   Array.from(forms).forEach((form) => {
