@@ -108,6 +108,7 @@
             <input
               type="text"
               class="form-control"
+              name="authorName"
               id="authorName"
               placeholder="Inserisci il nome dell'autore"
             />
@@ -121,9 +122,27 @@
             <input
               type="text"
               class="form-control"
+              name="authorLastName"
               id="authorLastName"
               placeholder="Inserisci il cognome dell'autore"
             />
+          </div>
+
+          <!-- Title -->
+          <div class="col-12">
+            <label for="bookTitle" class="form-label">Titolo</label>
+            <input
+              type="text"
+              class="form-control"
+              name="bookTitle"
+              id="bookTitle"
+              placeholder="Inserisci il titolo del libro"
+              aria-describedby="bookTitleHelpBlock"
+            />
+            <!-- Form text -->
+            <div class="form-text" id="bookTitleHelpBlock">
+              Titolo versione italiana
+            </div>
           </div>
 
           <!-- Submit Button -->
