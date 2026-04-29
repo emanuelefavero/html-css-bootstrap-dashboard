@@ -101,7 +101,7 @@
         <h1 class="text-capitalize fs-3 m-0">Nuovo Libro</h1>
 
         <!-- Form -->
-        <form class="row gx-4 gy-3">
+        <form class="row gx-4 gy-3 needs-validation" novalidate>
           <!-- Author Name -->
           <div class="col-6">
             <label for="authorName" class="form-label">Nome Autore</label>
@@ -116,6 +116,9 @@
               maxlength="50"
               autocomplete="given-name"
             />
+            <div class="invalid-feedback">
+              Inserisci almeno 2 caratteri per il nome dell'autore.
+            </div>
           </div>
 
           <!-- Author Last Name -->
@@ -134,6 +137,9 @@
               maxlength="50"
               autocomplete="family-name"
             />
+            <div class="invalid-feedback">
+              Inserisci almeno 2 caratteri per il cognome dell'autore.
+            </div>
           </div>
 
           <!-- Title -->
@@ -145,7 +151,7 @@
               name="bookTitle"
               id="bookTitle"
               placeholder="Inserisci il titolo del libro"
-              aria-describedby="bookTitleHelpBlock"
+              aria-describedby="bookTitleHelpBlock bookTitleFeedback"
               required
               minlength="2"
               maxlength="120"
@@ -153,6 +159,9 @@
             <!-- Form text -->
             <div class="form-text" id="bookTitleHelpBlock">
               Titolo versione italiana
+            </div>
+            <div class="invalid-feedback" id="bookTitleFeedback">
+              Inserisci un titolo valido.
             </div>
           </div>
 
@@ -172,6 +181,7 @@
               <option value="giallo">Giallo</option>
               <option value="saggistica">Saggistica</option>
             </select>
+            <div class="invalid-feedback">Seleziona un genere.</div>
           </div>
 
           <!-- Publish Year -->
@@ -189,6 +199,9 @@
               min="1450"
               max="2026"
             />
+            <div class="invalid-feedback">
+              Inserisci un anno tra 1450 e 2026.
+            </div>
           </div>
 
           <!-- ISBN Code -->
@@ -203,8 +216,9 @@
               required
               minlength="10"
               maxlength="17"
-              pattern="(?:(?:\d[\s-]?){9}[\dXx]|(?:\d[\s-]?){12}\d)"
+              pattern="(?:(?:[0-9](?: |-)?){9}[0-9Xx]|(?:[0-9](?: |-)?){12}[0-9])"
             />
+            <div class="invalid-feedback">Inserisci un codice ISBN valido.</div>
           </div>
 
           <!-- Horizontal Rule -->
@@ -223,6 +237,9 @@
               placeholder="Inserisci eventuali note sul libro"
               maxlength="500"
             ></textarea>
+            <div class="invalid-feedback">
+              Le note non possono superare 500 caratteri.
+            </div>
           </div>
 
           <!-- Available Digitally Checkbox -->
@@ -250,5 +267,27 @@
         </form>
       </section>
     </main>
+
+    <!-- Bootstrap Form Validation Script -->
+    <script>
+      // @see https://getbootstrap.com/docs/5.3/forms/validation/#custom-styles
+      ;(() => {
+        'use strict'
+
+        const forms = document.querySelectorAll('.needs-validation')
+
+        Array.from(forms).forEach((form) => {
+          form.addEventListener('submit', (event) => {
+            event.preventDefault()
+
+            if (!form.checkValidity()) {
+              event.stopPropagation()
+            }
+
+            form.classList.add('was-validated')
+          })
+        })
+      })()
+    </script>
   </body>
 </html>
