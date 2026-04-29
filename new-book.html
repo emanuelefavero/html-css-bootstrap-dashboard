@@ -106,7 +106,7 @@
         <!-- Form (with Bootstrap custom validation) -->
         <!-- NOTE: @see assets/js/form-validation.js -->
         <form class="row gx-4 gy-3 needs-validation" novalidate>
-          <!-- Author Name -->
+          <!-- Author First Name -->
           <div class="col-6">
             <label for="authorFirstName" class="form-label">Nome Autore</label>
             <input
@@ -115,12 +115,13 @@
               name="authorFirstName"
               id="authorFirstName"
               placeholder="Inserisci il nome dell'autore"
+              aria-describedby="authorFirstNameFeedback"
               required
               minlength="2"
               maxlength="50"
               autocomplete="given-name"
             />
-            <div class="invalid-feedback">
+            <div class="invalid-feedback" id="authorFirstNameFeedback">
               Inserisci almeno 2 caratteri per il nome dell'autore.
             </div>
           </div>
@@ -136,12 +137,13 @@
               name="authorLastName"
               id="authorLastName"
               placeholder="Inserisci il cognome dell'autore"
+              aria-describedby="authorLastNameFeedback"
               required
               minlength="2"
               maxlength="50"
               autocomplete="family-name"
             />
-            <div class="invalid-feedback">
+            <div class="invalid-feedback" id="authorLastNameFeedback">
               Inserisci almeno 2 caratteri per il cognome dell'autore.
             </div>
           </div>
@@ -160,7 +162,6 @@
               minlength="2"
               maxlength="120"
             />
-            <!-- Form text -->
             <div class="form-text" id="bookTitleHelpBlock">
               Titolo versione italiana
             </div>
@@ -176,6 +177,7 @@
               class="form-select"
               name="bookGenre"
               id="bookGenre"
+              aria-describedby="bookGenreFeedback"
               required
             >
               <option value="" disabled selected>Scegli il genere</option>
@@ -184,7 +186,9 @@
               <option value="giallo">Giallo</option>
               <option value="saggistica">Saggistica</option>
             </select>
-            <div class="invalid-feedback">Seleziona un genere.</div>
+            <div class="invalid-feedback" id="bookGenreFeedback">
+              Seleziona un genere.
+            </div>
           </div>
 
           <!-- Publish Year -->
@@ -198,11 +202,12 @@
               id="publicationYear"
               name="publicationYear"
               placeholder="Inserisci l'anno"
+              aria-describedby="publicationYearFeedback"
               required
               min="1450"
               max="2026"
             />
-            <div class="invalid-feedback">
+            <div class="invalid-feedback" id="publicationYearFeedback">
               Inserisci un anno di pubblicazione valido.
             </div>
           </div>
@@ -216,12 +221,15 @@
               name="isbnCode"
               id="isbnCode"
               placeholder="Inserisci il codice ISBN#"
+              aria-describedby="isbnCodeFeedback"
               required
               minlength="10"
               maxlength="17"
               pattern="(?:(?:[0-9](?: |-)?){9}[0-9Xx]|(?:[0-9](?: |-)?){12}[0-9])"
             />
-            <div class="invalid-feedback">Inserisci un codice ISBN valido.</div>
+            <div class="invalid-feedback" id="isbnCodeFeedback">
+              Inserisci un codice ISBN valido.
+            </div>
           </div>
 
           <!-- Horizontal Rule -->
@@ -229,7 +237,7 @@
             <hr class="mt-4" />
           </div>
 
-          <!-- Note (textarea) -->
+          <!-- Note -->
           <div class="col-12">
             <label for="bookNotes" class="form-label">Note</label>
             <textarea
@@ -238,9 +246,10 @@
               id="bookNotes"
               rows="3"
               placeholder="Inserisci eventuali note sul libro"
+              aria-describedby="bookNotesFeedback"
               maxlength="500"
             ></textarea>
-            <div class="invalid-feedback">
+            <div class="invalid-feedback" id="bookNotesFeedback">
               Le note non possono superare 500 caratteri.
             </div>
           </div>
