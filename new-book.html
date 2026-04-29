@@ -145,6 +145,50 @@
             </div>
           </div>
 
+          <!-- Genre -->
+          <div class="col-12 col-lg-4">
+            <label for="bookGenre" class="form-label">Genere</label>
+            <select
+              class="form-select"
+              aria-label="Seleziona il genere del libro"
+              name="bookGenre"
+              id="bookGenre"
+            >
+              <option disabled selected>Scegli il genere</option>
+              <option value="1">Narrativa</option>
+              <option value="2">Horror</option>
+              <option value="3">Giallo</option>
+              <option value="4">Saggistica</option>
+            </select>
+          </div>
+
+          <!-- Publish Year -->
+          <div class="col-12 col-lg-4">
+            <label for="publishYear" class="form-label"
+              >Anno di Pubblicazione</label
+            >
+            <input
+              type="number"
+              class="form-control"
+              name="publishYear"
+              id="publishYear"
+              placeholder="Inserisci l'anno"
+            />
+          </div>
+
+          <!-- ISBN Code -->
+          <div class="col-12 col-lg-4">
+            <label for="isbnCode" class="form-label">ISBN#</label>
+            <input
+              type="text"
+              class="form-control"
+              name="isbnCode"
+              id="isbnCode"
+              placeholder="Inserisci il codice ISBN#"
+              inputmode="numeric"
+            />
+          </div>
+
           <!-- Submit Button -->
           <div class="col-12">
             <button type="submit" class="btn btn-primary">
