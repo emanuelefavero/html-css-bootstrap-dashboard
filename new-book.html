@@ -37,6 +37,9 @@
       crossorigin="anonymous"
       defer
     ></script>
+
+    <!-- Bootstrap Form Validation Script -->
+    <script src="assets/js/form-validation.js" defer></script>
   </head>
 
   <body>
@@ -100,7 +103,8 @@
       <section class="vstack gap-4 py-2">
         <h1 class="text-capitalize fs-3 m-0">Nuovo Libro</h1>
 
-        <!-- Form -->
+        <!-- Form (with Bootstrap custom validation) -->
+        <!-- NOTE: @see assets/js/form-validation.js -->
         <form class="row gx-4 gy-3 needs-validation" novalidate>
           <!-- Author Name -->
           <div class="col-6">
@@ -200,7 +204,7 @@
               max="2026"
             />
             <div class="invalid-feedback">
-              Inserisci un anno tra 1450 e 2026.
+              Inserisci un anno di pubblicazione valido.
             </div>
           </div>
 
@@ -267,27 +271,5 @@
         </form>
       </section>
     </main>
-
-    <!-- Bootstrap Form Validation Script -->
-    <script>
-      // @see https://getbootstrap.com/docs/5.3/forms/validation/#custom-styles
-      ;(() => {
-        'use strict'
-
-        const forms = document.querySelectorAll('.needs-validation')
-
-        Array.from(forms).forEach((form) => {
-          form.addEventListener('submit', (event) => {
-            event.preventDefault()
-
-            if (!form.checkValidity()) {
-              event.stopPropagation()
-            }
-
-            form.classList.add('was-validated')
-          })
-        })
-      })()
-    </script>
   </body>
 </html>
